@@ -13,7 +13,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
     <style>
-        /* Temporary in-line CSS for debugging */
+        /* General Styles */
         body {
             font-family: 'Josefin Sans', sans-serif;
             margin: 0;
@@ -26,11 +26,45 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
+        /* Logo */
         .logo img {
             max-width: 150px;
             height: auto;
+            display: inline-block;
+            vertical-align: middle;
         }
 
+        /* Navigation Menu */
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navlinks {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navlinks li {
+            margin: 0 15px;
+        }
+
+        .navlinks a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .navlinks a:hover {
+            color: #007BFF;
+        }
+
+        /* Dashboard Container */
         .dashboard-container {
             text-align: center;
             margin: 20px auto;
@@ -43,6 +77,7 @@
             border: none;
         }
 
+        /* Footer */
         footer {
             text-align: center;
             margin-top: 20px;
@@ -67,22 +102,18 @@
     <!-- Header Section -->
     <header>
         <nav class="nav">
-            <div class="container">
-                <!-- Logo -->
-                <div class="logo">
-                    <img src="static/images/banner_1.png" alt="Logo">
-                </div>
-
-                <!-- Navigation Links -->
-                <div id="mainListDiv" class="main_list">
-                    <ul class="navlinks">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="mailto:alhanis1605@gmail.com" target="_blank">Contact</a></li>
-                        <li><a href="/predict">Predict</a></li>
-                        <li><a href="/moreinfo">More Info</a></li>
-                    </ul>
-                </div>
+            <!-- Logo -->
+            <div class="logo">
+                <img src="static/images/banner_1.png" alt="Logo">
             </div>
+
+            <!-- Navigation Links -->
+            <ul class="navlinks">
+                <li><a href="/">Home</a></li>
+                <li><a href="mailto:alhanis1605@gmail.com" target="_blank">Contact</a></li>
+                <li><a href="/predict">Predict</a></li>
+                <li><a href="/moreinfo">More Info</a></li>
+            </ul>
         </nav>
     </header>
 
