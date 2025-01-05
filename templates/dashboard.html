@@ -6,58 +6,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+
+    <!-- Linking external styles -->
     <link rel="stylesheet" type="text/css" href="static/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Header Section -->
     <header>
-        <div class="mainheader">
-            <nav class="nav">
-                <div class="container">
-                    <div class="logo">
-                        <img src="static/images/banner_1.png" alt="Logo">
-                    </div>
-                    <div id="mainListDiv" class="main_list">
-                        <ul class="navlinks">
-                            <li><a href="/">Home</a></li>
-                            <li><a href="mailto: alhanis1605@gmail.com" target="_blank">Contact</a></li>
-                            <li><a href="/predict">Predict</a></li>
-                            <li><a href="/moreinfo">More Info</a></li>
-                        </ul>
-                    </div>
-                    <span class="navTrigger">
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                    </span>
+        <nav class="nav">
+            <div class="container">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="static/images/banner_1.png" alt="Logo">
                 </div>
-            </nav>
-        </div>
+
+                <!-- Navigation Links -->
+                <div id="mainListDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="mailto:alhanis1605@gmail.com" target="_blank">Contact</a></li>
+                        <li><a href="/predict">Predict</a></li>
+                        <li><a href="/moreinfo">More Info</a></li>
+                    </ul>
+                </div>
+
+                <!-- Responsive Navbar Trigger -->
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        </nav>
     </header>
 
+    <!-- Main Content -->
     <main>
         <div class="dashboard-container">
             <h1>Thyroid Disease Dashboard</h1>
-            <iframe title="FYP FINAL" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiYjYzN2UwZjUtMWVhNy00YjBiLTkxNzMtZGJmZDE2MTBmYjhjIiwidCI6ImNkY2JiMGUyLTlmZWEtNGY1NC04NjcwLTY3MjcwNzc5N2FkYSIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
+            <!-- Embedding PowerBI Dashboard -->
+            <iframe 
+                title="Thyroid Disease Dashboard" 
+                width="600" 
+                height="373.5" 
+                src="https://app.powerbi.com/view?r=eyJrIjoiYjYzN2UwZjUtMWVhNy00YjBiLTkxNzMtZGJmZDE2MTBmYjhjIiwidCI6ImNkY2JiMGUyLTlmZWEtNGY1NC04NjcwLTY3MjcwNzc5N2FkYSIsImMiOjEwfQ%3D%3D" 
+                frameborder="0" 
+                allowfullscreen="true">
+            </iframe>
         </div>
     </main>
 
+    <!-- Footer Section -->
     <footer>
         <div class="social-links">
+            <!-- Social Links -->
             <a href="https://github.com/Alhns" target="_blank"><i class="fa fa-github"></i></a>
             <a href="mailto:alhanis1605@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
             <a href="https://www.instagram.com/al.hns/" target="_blank"><i class="fa fa-instagram"></i></a>
-            <p>&copy; Copyright 2024 Alhanis Nazri</p>
         </div>
+        <p>&copy; Copyright 2024 Alhanis Nazri</p>
     </footer>
 
-    <!-- Jquery needed -->
+    <!-- Required JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="static/js/main.js"></script>
 
-    <!-- Shrinking navbar script -->
+    <!-- Navbar Shrink Script -->
     <script>
         $(window).scroll(function () {
             if ($(document).scrollTop() > 50) {
