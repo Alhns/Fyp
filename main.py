@@ -13,6 +13,10 @@ with open("src/Thyroid_model.pkl","rb") as model_file:
 @app.route('/')
 def index():
    return render_template('home.html')
+    
+@app.route('/dashboard')
+def dashboard():
+   return render_template('dashboard.html')
 
 @app.route("/moreinfo", methods = ["GET", "POST"])
 def moreinfo():
